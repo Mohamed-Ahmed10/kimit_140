@@ -1,19 +1,19 @@
-import DisplayUser from "./components/DisplayUser"
-import HomePage from "./views/HomePage"
-
+import Avatar from "./components/Avatar"
+import ConditionalExplain from "./components/ConditionalExplain"
+import Person from "./components/Person"
+import Courses from "./views/Courses"
 function App() {
 
-  var courseName = "React"
 
   return (
     <>
-      <h1>Hello first session in React </h1>
-
-      <div className="test">{courseName}</div>
-
-      <DisplayUser />
+      <Avatar />
       <hr />
-      <HomePage />
+      <Person />
+      <hr />
+      <Courses />
+      <hr />
+      <ConditionalExplain />
     </>
   )
 }
