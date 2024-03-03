@@ -1,19 +1,16 @@
-import Avatar from "./components/Avatar"
-import ConditionalExplain from "./components/ConditionalExplain"
-import Person from "./components/Person"
+import Poem from "./components/Poem"
 import Courses from "./views/Courses"
-function App() {
+import { Persons } from "./views/Persons"
+import RecipeList from "./views/RecipeList"
 
+function App() {
 
   return (
     <>
-      <Avatar />
-      <hr />
-      <Person />
-      <hr />
-      <Courses />
-      <hr />
-      <ConditionalExplain />
+      {/* <Courses /> */}
+      {/* <Persons /> */}
+      {/* <RecipeList /> */}
+      <Poem />
     </>
   )
 }
