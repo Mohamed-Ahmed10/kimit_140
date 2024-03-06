@@ -1,16 +1,12 @@
-import Poem from "./components/Poem"
-import Courses from "./views/Courses"
-import { Persons } from "./views/Persons"
-import RecipeList from "./views/RecipeList"
+import CourseName from "./components/CourseName"
+import Home from "./views/Home"
 
 function App() {
 
   return (
     <>
-      {/* <Courses /> */}
-      {/* <Persons /> */}
-      {/* <RecipeList /> */}
-      <Poem />
+      <Home />
+      <CourseName />
     </>
   )
 }
