@@ -1,12 +1,18 @@
-import CourseName from "./components/CourseName"
-import Home from "./views/Home"
+import About from "./views/About"
+import BucketList from "./views/BacketList"
+import Scoreboard from "./views/PlayerScore"
+import TodoList from "./views/TodoList"
 
 function App() {
 
   return (
     <>
-      <Home />
-      <CourseName />
+      {/* <About />
+      <hr />
+      <Scoreboard />
+      <hr /> */}
+      {/* <TodoList /> */}
+      <BucketList />
     </>
   )
 }
