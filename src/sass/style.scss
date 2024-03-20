@@ -1,0 +1,10 @@
+@import "./global/global";
+@import "./components/home";
+
+body {
+  height: 5000px;
+
+  .heading {
+    color: rgb(103, 209, 21)
+  }
+}

@@ -1,18 +1,14 @@
-import About from "./views/About"
-import BucketList from "./views/BacketList"
-import Scoreboard from "./views/PlayerScore"
-import TodoList from "./views/TodoList"
+import { Button, Accordion } from 'react-bootstrap';
+import Home from './views/Home';
+import SiteNav from './layout/Nav';
+import About from './views/About';
+import Products from './views/Products';
 
 function App() {
 
   return (
     <>
-      {/* <About />
-      <hr />
-      <Scoreboard />
-      <hr /> */}
-      {/* <TodoList /> */}
-      <BucketList />
+      <Products />
     </>
   )
 }
