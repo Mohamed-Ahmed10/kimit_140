@@ -1,5 +1,5 @@
 import { Button, Row, Col, Card, Container, Spinner } from "react-bootstrap"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Products() {
 
@@ -10,10 +10,14 @@ export default function Products() {
             .then(res => res.json())
             .then(data => setProducts(data))
     }
+
+    useEffect(()=>
+    {
+        getProducts()
+    },[])
     return (
         <div>
             <h2>Products</h2>
-            <Button variant="info" onClick={getProducts}>Get products</Button>
             <Container fluid>
                 <Row className="g-4">
                     {products.length > 0

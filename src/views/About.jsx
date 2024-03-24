@@ -1,18 +1,15 @@
-import { Container, Row, Col } from "react-bootstrap";
+// import { useContext } from "react";
+// import { ProductsContext } from "../App";
 
 export default function About() {
 
+    // let products = useContext(ProductsContext)
+
+    // console.log(products)
     return (
-        <>
-            <Container>
-                <Row>
-                    <Col md="3" sm={12}>test</Col>
-                    <Col md="3" sm={12}>test</Col>
-                    <Col md="3" sm={12}>test</Col>
-                    <Col md="3" sm={12}>test</Col>
-                </Row>
-            </Container>
-        </>
+        <div>
+            <h2>I am about</h2>
+            {/* {products.numOfProducts} */}
+        </div>
     );
 }
-

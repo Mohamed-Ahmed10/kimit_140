@@ -1,4 +1,5 @@
 import { Card, Button } from 'react-bootstrap';
+import { CiMail } from "react-icons/ci";
 
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     return (
         <div className="homeContent">
             I am home
-
+            <CiMail />
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
