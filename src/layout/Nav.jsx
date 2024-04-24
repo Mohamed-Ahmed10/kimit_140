@@ -21,6 +21,7 @@ function SiteNav() {
                         <NavLink to="/about" className='nav-link'>About</NavLink>
                         <NavLink to="/products" className='nav-link'>Products</NavLink>
                         <NavLink to="/contact" className='nav-link'>Contact</NavLink>
+                        <NavLink to="/call" className='nav-link'>Callback</NavLink>
                     </Nav>
                     <div onClick={theme.handleTheme}>
                         {theme.theme === 'dark'

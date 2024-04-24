@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom"
 import Contact from './views/Contact';
 import { useContext } from 'react';
 import { ThemeContext } from './context/ThemeContext';
+import CallBackExplain from './views/CallBackExplain';
 // import { createContext, useState } from 'react';
 
 // export let ProductsContext = createContext()
@@ -13,21 +14,22 @@ import { ThemeContext } from './context/ThemeContext';
 function App() {
 
   // let [numOfProducts , setNumOfProducts] = useState(0)
-  
+
   let theme = useContext(ThemeContext)
   console.log(theme)
 
   return (
     <div className={theme.theme}>
       {/* <ProductsContext.Provider value={{numOfProducts}}> */}
-        <SiteNav />
+      <SiteNav />
 
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/products' Component={Products} />
-          <Route path='/contact' Component={Contact} />
-        </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/products' Component={Products} />
+        <Route path='/contact' Component={Contact} />
+        <Route path='/call' Component={CallBackExplain} />
+      </Routes>
       {/* </ProductsContext.Provider> */}
     </div>
   )
