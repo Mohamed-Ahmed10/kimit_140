@@ -1,35 +1,32 @@
-// import { useContext } from "react";
-// import { ProductsContext } from "../App";
-
-import { useRef, useEffect } from "react";
+// import { useState } from "react";
+import { Button } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function About() {
 
+    // const [count, setCount] = useState(0)
+    const countState = useSelector((state) => state.counter)
+    const dispatch = useDispatch()
 
-    var inputRef = useRef();
+    let increase = () => {
+        // setCount(count + 1)
+        dispatch({
+            type: 'INCREMENT'
+        })
+    }
 
-
-    var parent = useRef();
-
-
-    useEffect(() => {
-        inputRef.current.focus()
-        console.log(parent.current.children)
-    }, [])
+    let decrease = () => {
+        // setCount(count - 1)
+        dispatch({
+            type: 'DECREMENT'
+        })
+    }
 
     return (
-        <div>
-            <h2>I am about</h2>
-            <div ref={parent} id="hello">
-                <div className="test">test</div>
-                <div className="test">test</div>
-                <div className="test">test</div>
-                <div className="test">test</div>
-                <div className="test">test</div>
-                <div className="test">test</div>
-            </div>
-
-            <input type="text" ref={inputRef} />
+        <div className="d-flex justify-content-between w-50 m-auto">
+            <Button variant="primary" onClick={increase}>Increase</Button>
+            <div>{countState}</div>
+            <Button variant="primary" onClick={decrease}>Decrease</Button>
         </div>
     );
 }

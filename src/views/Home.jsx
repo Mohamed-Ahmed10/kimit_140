@@ -1,8 +1,10 @@
 import { Card, Button } from 'react-bootstrap';
 import { CiMail } from "react-icons/ci";
+import { useSelector } from 'react-redux';
 
 
 export default function Home() {
+    const counterState = useSelector(state => state.counter)
 
     return (
         <div className="homeContent">
@@ -19,6 +21,7 @@ export default function Home() {
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
             </Card>
+            {counterState}
         </div>
     )
 }
